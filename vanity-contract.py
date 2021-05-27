@@ -30,7 +30,7 @@ except:
 
 print("Searching for first contract starting with 0x" + vanity)
 print("This is length " + str(len(vanity)))
-print("Expected number of tries: " + str(len(vanity)**16))
+print("Expected number of tries: " + str(16**len(vanity)))
 count = 0
 
 while True:

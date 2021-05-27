@@ -31,3 +31,7 @@ Run either script with one command line argument, that is the hex string you wan
      python vanity-contract.py 001122
 
 Note that longer prefixes take quadratically longer to find.
+
+## Why would I do this?
+
+For your own personal or company brand, of course! If your contract address for your own DEX or NFT starts with the letters of your token, then that draws extra attention. Running one of these scripts overnight can help you achieve that.

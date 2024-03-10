@@ -32,7 +32,7 @@ while True:
     if not count % 100000:
         print(count)
     privkey = os.urandom(32)
-    acct = Account.privateKeyToAccount(privkey)
+    acct = Account.from_key(privkey)
     acct_addr = acct.address
     if acct_addr[2:len(vanityPrefix)+2].lower() == vanityPrefix and acct_addr[-1*len(vanitySuffix):].lower() == vanitySuffix:
         print("Private key: " + str(privkey.hex()))

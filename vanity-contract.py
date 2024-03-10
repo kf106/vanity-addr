@@ -38,7 +38,7 @@ while True:
     if not count % 100000:  # show every 100k tries so we can see progress
         print(count)
     privkey = os.urandom(32)
-    acct = Account.privateKeyToAccount(privkey)
+    acct = Account.from_key(privkey)
     contract = mk_contract_address(acct.address, 0)
     if contract[2:len(vanity)+2].lower() == vanity:
         print("Private key: " + str(privkey.hex()))

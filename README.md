@@ -21,7 +21,7 @@ Finally, make Python 3.8.2 the default for the project folder:
 
 You can then install the packages required using pip3:
 
-     pip install rlp eth_account eth_utils
+     pip install rlp==0.3.5 eth_account==0.5.9 eth_utils==2.1.0
 
 ## Running the script
 
